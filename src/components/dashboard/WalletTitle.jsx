@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { FiSearch } from "react-icons/fi";
-function Navbar() {
+function WalletTitle() {
   return (
     <NavbarContainer>
       <Text>
-        Welcome!
-        <span> User</span>
+        Wallet
       </Text>
     </NavbarContainer>
   );
@@ -62,4 +61,4 @@ const Input = styled.input`
   }
 `;
 
-export default Navbar;
+export default WalletTitle;

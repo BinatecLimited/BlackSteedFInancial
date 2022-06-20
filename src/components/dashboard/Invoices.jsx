@@ -9,36 +9,7 @@ function Invoices() {
   return (
     <InvoicesContainer>
       <CardContent>
-        <Invoice>
-          <Info>
-            <Avatar>
-              <img src={AvatarImage} alt="" />
-            </Avatar>
-            <TextContainer>
-              <Title>Alexander Williams</Title>
-              <SubTitle>ABC Holdings</SubTitle>
-            </TextContainer>
-          </Info>
-          <Container>
-            <Badge content="Paid" paid />
-            <Price>$ 1,200.87</Price>
-          </Container>
-        </Invoice>
-        <Invoice>
-          <Info>
-            <Avatar>
-              <img src={AvatarImage2} alt="" />
-            </Avatar>
-            <TextContainer>
-              <Title>John Philips</Title>
-              <SubTitle>Inchor Associates</SubTitle>
-            </TextContainer>
-          </Info>
-          <Container>
-            <Badge content="Late" late />
-            <Price>$ 1,200.87</Price>
-          </Container>
-        </Invoice>
+        
       </CardContent>
     </InvoicesContainer>
   );
@@ -119,3 +90,36 @@ const Container = styled.div`
 const Price = styled.div``;
 
 export default Invoices;
+
+
+
+//<Invoice>
+  //        <Info>
+    //        <Avatar>
+      //        <img src={AvatarImage} alt="" />
+        //    </Avatar>
+          //  <TextContainer>
+            //  <Title>Alexander Williams</Title>
+              //<SubTitle>ABC Holdings</SubTitle>
+        //    </TextContainer>
+          //</Info>
+    //      <Container>
+  //          <Badge content="Paid" paid />
+       //     <Price>$ 1,200.87</Price>
+         // </Container>
+       // </Invoice>
+      //  <Invoice>
+    //      <Info>
+         //   <Avatar>
+       //       <img src={AvatarImage2} alt="" />
+     //       </Avatar>
+   //         <TextContainer>
+           //   <Title>John Philips</Title>
+         //     <SubTitle>Inchor Associates</SubTitle>
+       //     </TextContainer>
+     //     </Info>
+   //       <Container>
+  //          <Badge content="Late" late />
+         //   <Price>$ 1,200.87</Price>
+       //   </Container>
+     //   </Invoice>

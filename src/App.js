@@ -12,6 +12,7 @@ import Home from "./components/home/Home"
 import Register from "./components/Register/Register"
 import Login from "./components/Login/LoginForm"
 import Dashboard from "./components/dashboard/Dashboard"
+import Wallet from "./components/dashboard/Wallet"
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
           <Route exact path='/contact' element={<Contact/>} />
           <Route exact path='/Register' element={<Register/>} />
           <Route exact path='/Login' element={<Login/>} />
-          <Route exact path='/Dashboard' element={<Dashboard/>} />
+          <Route exact path='/Dashboard' element={<Dashboard />} />
+          <Route exact path='/Wallet' element={<Wallet />} />
         </Routes>
         
       </Router>

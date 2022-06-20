@@ -15,7 +15,7 @@ const Hprice = () => {
               <Link to='/Dashboard'>
                 <div style={{ color: '#ffffff' }} className='button'>
                   <button>
-                    REGISTER
+                    DASHBOARD
                   </button>
                 </div>
               </Link>

@@ -8,29 +8,9 @@ function ProjectRecommendation() {
   return (
     <RecommendProject>
       <CardContent>
-        <Detail>
-          <InfoContainer>
-            <Avatar>
-              <img src={AvatarImage} alt="" />
-            </Avatar>
-            <Info>
-              <InfoName>Thomas Martin</InfoName>
-              <InfoUpdate>Updated 10m ago</InfoUpdate>
-            </Info>
-          </InfoContainer>
-          <Badge content="Design" />
-        </Detail>
-        <Title>
-          Need a designer to form branding essentials for my business.
-        </Title>
-        <ProjectInfo>
-          Looking for a talented brand designer to create all the branding
-          materials for my new startup.
-        </ProjectInfo>
-        <PriceContainer>
-          <Price>$8700/month</Price>
-          <Badge content="Full Time" clean />
-        </PriceContainer>
+        <button className=" height: 130%; ">
+          BUY & SELL
+        </button>
       </CardContent>
     </RecommendProject>
   );
@@ -115,3 +95,28 @@ const PriceContainer = styled.div`
 const Price = styled.div``;
 
 export default ProjectRecommendation;
+
+
+//<Detail>
+      //    <InfoContainer>
+          //  <Avatar>
+        //      <img src={AvatarImage} alt="" />
+      //      </Avatar>
+    //        <Info>
+          //    <InfoName>Thomas Martin</InfoName>
+        //      <InfoUpdate>Updated 10m ago</InfoUpdate>
+       //     </Info>
+     //     </InfoContainer>
+   //       <Badge content="Design" />
+ //       </Detail>
+      //  <Title>
+    //      Need a designer to form branding essentials for my business.
+    //    </Title>
+  //      <ProjectInfo>
+//          Looking for a talented brand designer to create all the branding
+     //     materials for my new startup.
+   //     </ProjectInfo>
+      //  <PriceContainer>
+      //    <Price>$8700/month</Price>
+    //      <Badge content="Full Time" clean />
+  //      </PriceContainer>

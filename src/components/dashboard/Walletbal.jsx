@@ -1,26 +1,40 @@
 import React from "react";
 import styled from "styled-components";
-import { IoStatsChart } from "react-icons/io5";
+import { IoStatsChart, IoCashOutline } from "react-icons/io5";
 import { themeColor, hoverEffect } from "./utils";
 
-function Earnings() {
+function Walletbal() {
   return (
     <EarningsCard>
+     <div style={{ paddingRight: '70px' }}>
+      <CardContent>
+        <Chart>
+          <IoCashOutline />
+        </Chart>
+        <EarningsText>Balance</EarningsText>
+        <Earning>$78.90</Earning>
+      </CardContent>
+     </div>
+     <div className="Stats">
       <CardContent>
         <Chart>
           <IoStatsChart />
         </Chart>
-        <EarningsText>Earnings</EarningsText>
-        <Earning>$7,890</Earning>
-        <EarningsIncrease>+ 10% since last month</EarningsIncrease>
+        <EarningsText>Profit</EarningsText>
+        <Earning>$78.90</Earning>
       </CardContent>
+      
+     </div>
     </EarningsCard>
   );
 }
 
 const EarningsCard = styled.div`
-  height: 100%;
-  width: 14rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  width: 61rem;
   background-color: #D9B08C;
   padding: 1rem;
   border-radius: 1rem;
@@ -29,9 +43,12 @@ const EarningsCard = styled.div`
   &:hover {
     box-shadow: ${hoverEffect};
   }
-
+  
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: auto;
   }
 `;
 
@@ -66,4 +83,8 @@ const EarningsIncrease = styled.h5`
   border-radius: 2rem;
 `;
 
-export default Earnings;
+//const Address = styled.div`
+  //color: black;
+//`;
+
+export default Walletbal;

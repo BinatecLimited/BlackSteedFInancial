@@ -13,8 +13,8 @@ function Dashboard() {
 
 const Container = styled.div`
   display: flex;
-  height: 97vh;
-  background: linear-gradient(to bottom right, white 0%, #e6e4ff 70%);
+  height: 100vh;
+  background: linear-gradient(to bottom right, #D1E8E2 10%, #D1E8E2 70%);
   border-radius: 2rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;

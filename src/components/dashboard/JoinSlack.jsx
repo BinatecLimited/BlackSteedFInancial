@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaSlack } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
 import { darkThemeColor, hoverEffect, themeColor } from "./utils";
 function JoinSlack() {
   return (
@@ -8,11 +8,11 @@ function JoinSlack() {
       <CardContent flex={true}>
         <Slack>
           <SlackLogo>
-            <FaSlack />
+            <FaTelegram />
           </SlackLogo>
           <SlackText>
-            <SlackHead>Engage with clients</SlackHead>
-            <SlackFoot>Join slack channel</SlackFoot>
+            <SlackHead>Join the community</SlackHead>
+            <SlackFoot>Engage us through Telegram</SlackFoot>
           </SlackText>
         </Slack>
         <SlackJoin>Join Now</SlackJoin>
@@ -22,7 +22,7 @@ function JoinSlack() {
 }
 
 const JoinChannel = styled.div`
-  background-color: ${darkThemeColor};
+  background-color:  #0088cc;
   height: 50%;
   margin-top: 6.5rem;
   border-radius: 1rem;
@@ -80,15 +80,16 @@ const SlackFoot = styled.h5`
   font-weight: normal;
 `;
 const SlackJoin = styled.button`
-  background-color: ${themeColor};
+  background-color: #fff;
   border: none;
   outline: none;
   padding: 1rem 2rem;
-  color: white;
+  margin: 0 20px 0 0;
+  color:  #0088cc;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   font-weight: bold;
-  cursor: pointer;
+  cursor: pointer; 
 `;
 
 export default JoinSlack;

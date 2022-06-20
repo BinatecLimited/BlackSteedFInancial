@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import styled from "styled-components";
 import { RiHomeLine, RiFileCopyLine } from "react-icons/ri";
 import { FaWallet } from "react-icons/fa";
@@ -12,25 +13,24 @@ function Sidebar() {
       <ProfileContainer>
         <Avatar src={AvatarImage} />
         <Name>Kishan Sheth</Name>
-        <Badge content="Pro Level" />
+        <Badge />
+        <Address>WalletAddress: 0x00a....</Address>
       </ProfileContainer>
       <LinksContainer>
         <Links>
-          <Link>
+          <Lin>
             <RiHomeLine />
             <h3>Dashboard</h3>
-          </Link>
-          <Link>
+          </Lin>
+          <Lin>
             <RiFileCopyLine />
-            <h3>Projects</h3>
-          </Link>
-          <Link>
-            <FaWallet />
-            <h3>Invoices</h3>
-          </Link>
-          <Link>
-            <AiOutlinePieChart />
-            <h3>Reports</h3>
+            <h3>Transactions</h3>
+          </Lin>
+          <Link to='/Wallet'>
+            <Lin>
+              <FaWallet />
+              <h3>Wallet</h3>
+            </Lin>
           </Link>
         </Links>
         <ContactContainer>
@@ -45,8 +45,8 @@ function Sidebar() {
 const Container = styled.div`
   width: 20%;
   height: 100% !important;
-  border-radius: 2rem;
-  background-color: #091322;
+  border-radius: 0 0 0 0;
+  background-color: #2C3531;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,6 +64,12 @@ const ProfileContainer = styled.div`
   flex-direction: column;
 `;
 
+const Address = styled.div`
+  padding-top: 10px;
+  font-size: 80%;
+  color: white;
+`
+
 const Avatar = styled.img`
   height: 7rem;
   border-radius: 6rem;
@@ -78,10 +84,10 @@ const Name = styled.h1`
 `;
 
 const LinksContainer = styled.div`
-  background-color: ${darkThemeColor};
+  background-color: #116466;
   height: 100%;
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 20px 20px 0 0;
 `;
 
 const Links = styled.ul`
@@ -92,7 +98,7 @@ const Links = styled.ul`
   height: 60%;
 `;
 
-const Link = styled.li`
+const Lin = styled.li`
   margin-left: 25%;
   margin-bottom: 2rem;
   display: flex;
@@ -109,7 +115,7 @@ const Link = styled.li`
 `;
 
 const ContactContainer = styled.div`
-  width: 60%;
+  width: 80%;
   background-color: #091322;
   color: #c4c4c4;
   height: 15%;
@@ -120,13 +126,23 @@ const ContactContainer = styled.div`
   padding: 1rem;
 
   a {
-    color: white;
+    color: #D1E8E2;
+    padding-bottom: 50px;
     text-decoration: none;
   }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-bottom: 2rem;
+    width: 40%;
+    margin: 40px 0 0 90px;
   }
+  
 `;
 
 export default Sidebar;
+
+
+//<Link>
+         //   <AiOutlinePieChart />
+       //     <h3>Reports</h3>
+     //     </Link>

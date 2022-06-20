@@ -7,25 +7,8 @@ import { cardShadow, hoverEffect, themeColor } from "./utils";
 function Projects() {
   return (
     <YourProjects>
-      <Project>
-        <Avatar>
-          <img src={AvatarImage} alt="" />
-        </Avatar>
-        <Detail>
-          <Title>Logo design for Bakery</Title>
-          <SubTitle>1 day remaining</SubTitle>
-        </Detail>
-      </Project>
-      <Project>
-        <Avatar>
-          <img src={AvatarImage2} alt="" />
-        </Avatar>
-        <Detail>
-          <Title>Personal branding project</Title>
-          <SubTitle>5 days remaining</SubTitle>
-        </Detail>
-      </Project>
-      <AllProjects>See all projects</AllProjects>
+      
+      <AllProjects>See all Transactions</AllProjects>
     </YourProjects>
   );
 }
@@ -79,3 +62,24 @@ const AllProjects = styled.h5`
 `;
 
 export default Projects;
+
+
+
+//<Project>
+        //<Avatar>
+          //<img src={AvatarImage} alt="" />
+        //</Avatar>
+        //<Detail>
+          //<Title>Logo design for Bakery</Title>
+         // <SubTitle>1 day remaining</SubTitle>
+        //</Detail>
+      //</Project>
+     // <Project>
+        //<Avatar>
+         // <img src={AvatarImage2} alt="" />
+       // </Avatar>
+      //  <Detail>
+         // <Title>Personal branding project</Title>
+         // <SubTitle>5 days remaining</SubTitle>
+       // </Detail>
+     // </Project>

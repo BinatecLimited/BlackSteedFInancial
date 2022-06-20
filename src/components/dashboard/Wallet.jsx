@@ -1,47 +1,44 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "./Navbar";
-import Earnings from "./Earnings";
-import Info from "./Info";
-import JoinSlack from "./JoinSlack";
-import ProjectRecommendation from "./ProjectRecommendation";
-import Projects from "./Projects";
-import Invoices from "./Invoices";
 
-function MainContent() {
+import styled from "styled-components";
+import Sidebar from "./Sidebar";
+import Walletbal from "./Walletbal";
+import Walletactivity from "./Walletactivity";
+import WalletTitle from "./WalletTitle";
+
+function Dashboard() {
   return (
     <Container>
-      <Navbar />
+      <Sidebar />
+     <Container1>
+      <WalletTitle />
       <SubContainer>
         <SectionOne>
           <ColumnOne1>
-            <Earnings />
-            <Info />
+            <Walletbal />
           </ColumnOne1>
-          <ColumnTwo1>
-            <TitleText>Recent Transactions</TitleText>
-            <Projects />
-          </ColumnTwo1>
         </SectionOne>
         <SectionTwo>
-          <ColumnOne2>
-            <InvoiceContainer>
-              <TitleText>Latest News/Crypto Prices</TitleText>
-              <Invoices />
-            </InvoiceContainer>
-            <JoinSlack />
-          </ColumnOne2>
           <ColumnTwo2>
-            <TitleText>Trade Now!</TitleText>
-            <ProjectRecommendation />
+            <Walletactivity />
           </ColumnTwo2>
         </SectionTwo>
       </SubContainer>
+     </Container1>
     </Container>
   );
 }
 
 const Container = styled.div`
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #D1E8E2 10%, #D1E8E2 70%);
+  border-radius: 2rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    flex-direction: column;
+  }
+`;
+
+const Container1 = styled.div`
   width: 80%;
   background: linear-gradient(to bottom right, #D1E8E2 10%, #D1E8E2 70%);
   border-bottom-right-radius: 2rem;
@@ -147,4 +144,4 @@ const ColumnTwo2 = styled.div`
   }
 `;
 
-export default MainContent;
+export default Dashboard;

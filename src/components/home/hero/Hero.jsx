@@ -8,7 +8,7 @@ const Hero = () => {
       <section className='hero'>
         <div className='container'>
           <div className='row'>
-            <Heading subtitle='WELCOME TO BLACK STEED FINANCIAL' title="At Vanguard youre more than just an investor, you're an owner." />
+            <Heading subtitle='WELCOME TO BLACK STEED FINANCIAL' title="At Black Steed Financial youre more than just an investor, you're an owner." />
             <p style={{ color: '#2C3531' }}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div className='button'>
               <button className='primary-btn'>

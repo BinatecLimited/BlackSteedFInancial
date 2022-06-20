@@ -6,7 +6,7 @@ function Badge({
   clean = false,
   glow = false,
   paid = false,
-  late = false,
+  late = true,
 }) {
   return (
     <Div clean={clean} glow={glow} paid={paid} late={late}>
