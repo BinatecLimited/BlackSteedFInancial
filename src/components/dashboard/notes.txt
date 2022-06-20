@@ -1,0 +1,103 @@
+import React from 'react'
+import Sidebar from "./Sidebar";
+import styled from "styled-components";
+
+const Wallet = () => {
+  return (
+    <ContainerWallet>
+     <Sidebar />
+     <div>
+        <Title>WALLET</Title>
+     </div>
+     <SectionOne>
+      <WalletHead>
+        <div>
+          <Price>$200.00</Price>
+          <Name>Wallet Balance</Name>
+        </div>
+        <div>
+          <Price>$10.90</Price>
+          <Name>Arbitrage Profit  </Name>
+        </div>
+      </WalletHead>
+     </SectionOne>
+    </ContainerWallet>
+  );
+}
+
+export default Wallet
+
+const ContainerWallet = styled.div`
+  display: flex;
+  height: 41.4rem;
+  background-color: #D1E8E2;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    flex-direction: column;
+  }
+`;
+
+const SectionOne = styled.div`
+  margin: 100px 0 0 0;
+  height: 30%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    
+    background-color: #D1E8E2;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    padding: 40px 0 70px ;
+  }
+`;
+
+const WalletHead = styled.div`
+  background-color: #D9B08C;
+  display: flex;
+  padding-top: 5px; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  height: 20rem;
+  border-radius: 30px; 
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    flex-direction: column;
+    height: 16rem;
+    width: 20rem;
+    padding-left: 35px;
+    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+const Title = styled.div`
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+`;
+
+const Price = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200;8..144,300&display=swap');
+  font-family: "Roboto", sans-serif;
+  font-size: 250%;
+  color: white;
+  padding: 20px 40px 0 0;
+`;
+
+const Name = styled.div`
+  padding: 15px 50px 0 12px;
+`;
+
+
+
+
+
+
+
+
+// style={{ textAlign: 'center', paddingTop: '20px', fontSize: '200%' }}
